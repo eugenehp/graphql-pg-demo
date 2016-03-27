@@ -4,7 +4,9 @@
   "description": "GraphQL demo using Postgres",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config index.js --watch app/"
+    "dev": "nodemon -r dotenv/config index.js --watch app/",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
   },
   "author": "Moudy <moudy.elkammash@gmail.com>",
   "license": "ISC",
